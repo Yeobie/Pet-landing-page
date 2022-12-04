@@ -42,12 +42,30 @@
   background-size: 400px;
   background-position: center;
 }
+
 .hero-title {
   display: flex;
+  padding: 50px 0px 100px 200px;
   flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0px 0px 100px 80px;
+  justify-content: center;
+}
+
+.primary {
+  padding: 10px 30px;
+  border-radius: 50px;
+  margin-right: 20px;
+  background-color: var(--primary-color);
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid var(--primary-color);
+}
+
+.secondary {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #fff;
+  color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
 }
 
 .sekhmet-title {
@@ -228,13 +246,32 @@ h2 {
   background-position: center;
 }
 
+.contact-title {
+  font-size: 35px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
 .contact img {
   max-width: 50%;
+  display: block;
+  margin: 0 auto;
 }
 
 .contact-info {
   display: flex;
   align-items: center;
+}
+
+.contact a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #000000;
+  transition: all 180ms ease-in-out;
+}
+
+.contact a:hover {
+  color: var(--secondary-color);
 }
 
 .social-links a {
@@ -249,6 +286,7 @@ h2 {
 
 .social-links a:hover {
   background-color: var(--secondary-color);
+  color: #fff;
 }
 
 /*CREDITS */
