@@ -3,6 +3,32 @@
   --secondary-color: #64e0d1;
 }
 
+.navbar {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navbar ul {
+  margin-bottom: 0px;
+}
+.navbar li {
+  list-style: none;
+  margin-left: 40px;
+}
+
+.navbar a {
+  color: var(--secondary-color);
+  padding: 10px;
+  border-radius: 30px;
+  transition: all 180ms ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
 .container-fluid {
   padding: 0;
 }
@@ -11,8 +37,7 @@
 
 .hero {
   padding: 50px 0px;
-  /*background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/250/original/output-onlinepngtools.png?1670090317); */
-  background-image: url(https://ih1.redbubble.net/image.858249436.2258/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/346/original/flat_750x_075_f-pad_750x1000_f8f8f8.u1.jpg?1670168875);
   background-repeat: repeat;
   background-size: 400px;
   background-position: center;
@@ -46,16 +71,26 @@ h2 {
   margin: 0 auto;
   border-radius: 30px;
   transform: rotateZ(351deg);
+  transition: all 360ms ease-in-out;
+}
+
+.sekhmet-hero:hover {
+  transform: scale(110%);
 }
 
 /* INTRODUCTION */
 .introduction,
 .like,
-.catwalk {
+.catwalk,
+.food,
+.contact {
   padding: 60px 100px 30px;
 }
 .introduction {
-  background-image: linear-gradient(to right bottom, #def1fb, #f2f7fe, #ffffff);
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/350/original/Untitled2.png?1670169284);
+  background-repeat: repeat-x;
+  background-size: 400px;
+  background-position: bottom;
 }
 
 .introduction h2 {
@@ -92,6 +127,7 @@ h2 {
   border-radius: 30px 30px 0px 0px;
   display: block;
   margin: 0 auto;
+  transition: all 360ms ease-in-out;
 }
 .like .orange {
   background-color: rgba(254, 140, 104);
@@ -100,23 +136,34 @@ h2 {
 .orange p {
   color: #fff;
   line-height: 30px;
-  padding: 0px 30px;
+  padding: 20px 30px;
 }
 
 .like .white img {
   border-radius: 0px 0px 30px 30px;
   display: block;
   margin: 0 auto;
+  transition: all 360ms ease-in-out;
 }
 
 .white p {
   color: var(--secondary-color);
   line-height: 30px;
-  padding: 0px 30px;
+  padding: 20px 30px;
   margin: 0px;
 }
 
+.like img:hover {
+  transform: scale(110%);
+}
 /* CATWALK */
+
+.catwalk {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/350/original/Untitled2.png?1670169284);
+  background-repeat: repeat-x;
+  background-size: 400px;
+  background-position: bottom;
+}
 
 .catwalk h2 {
   padding-bottom: 30px;
@@ -124,6 +171,7 @@ h2 {
 
 .catwalk p {
   padding: 0px 180px 30px;
+  line-height: 30px;
 }
 
 .catwalk img {
@@ -131,4 +179,85 @@ h2 {
   max-width: 80%;
   display: block;
   margin: 0 auto;
+  transition: all 360ms ease-in-out;
+}
+
+.catwalk img:hover {
+  transform: scale(110%);
+}
+
+/*FOOD */
+
+.food {
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/351/original/Untitled3.png?1670169476);
+  background-repeat: repeat-x;
+  background-size: 400px;
+  background-position: bottom;
+  padding-bottom: 0px;
+}
+
+.food h2 {
+  color: var(--primary-color);
+  padding-bottom: 30px;
+}
+
+.food p {
+  padding: 80px;
+  line-height: 30px;
+}
+
+.food img {
+  max-width: 60%;
+  border-radius: 30px;
+  display: block;
+  margin: 0 auto;
+  transition: all 360ms ease-in-out;
+}
+
+.food img:hover {
+  transform: scale(110%);
+}
+
+/* CONTACT */
+
+.contact {
+  margin: 0px 0px 30px;
+  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/350/original/Untitled2.png?1670169284);
+  background-repeat: repeat-x;
+  background-size: 400px;
+  background-position: center;
+}
+
+.contact img {
+  max-width: 50%;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+}
+
+.social-links a {
+  font-size: 20px;
+  color: #fff;
+  margin: 0 30px;
+  padding: 10px 16px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  transition: all 180ms ease-in-out;
+}
+
+.social-links a:hover {
+  background-color: var(--secondary-color);
+}
+
+/*CREDITS */
+
+.credits a {
+  color: var(--primary-color);
+  transition: all 180ms ease-in-out;
+}
+
+.credits a:hover {
+  color: var(--secondary-color);
 }
