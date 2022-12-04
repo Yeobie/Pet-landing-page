@@ -50,8 +50,9 @@ h2 {
 
 /* INTRODUCTION */
 .introduction,
-.like {
-  padding: 60px 100px;
+.like,
+.catwalk {
+  padding: 60px 100px 30px;
 }
 .introduction {
   background-image: linear-gradient(to right bottom, #def1fb, #f2f7fe, #ffffff);
@@ -77,7 +78,7 @@ h2 {
 
 .like h2 {
   color: var(--primary-color);
-  padding-bottom: 50px;
+  padding-bottom: 30px;
 }
 
 .like .col-4 {
@@ -113,4 +114,21 @@ h2 {
   line-height: 30px;
   padding: 0px 30px;
   margin: 0px;
+}
+
+/* CATWALK */
+
+.catwalk h2 {
+  padding-bottom: 30px;
+}
+
+.catwalk p {
+  padding: 0px 180px 30px;
+}
+
+.catwalk img {
+  border-radius: 30px;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
 }
