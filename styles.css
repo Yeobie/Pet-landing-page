@@ -1,6 +1,6 @@
 :root {
   --primary-color: #fe8c68;
-  --secondary-color: #9ceffa;
+  --secondary-color: #64e0d1;
 }
 
 .container-fluid {
@@ -11,8 +11,9 @@
 
 .hero {
   padding: 50px 0px;
-  background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/250/original/output-onlinepngtools.png?1670090317);
-  background-repeat: no-repeat;
+  /*background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/250/original/output-onlinepngtools.png?1670090317); */
+  background-image: url(https://ih1.redbubble.net/image.858249436.2258/flat,750x,075,f-pad,750x1000,f8f8f8.u1.jpg);
+  background-repeat: repeat;
   background-size: 400px;
   background-position: center;
 }
@@ -21,7 +22,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding-bottom: 100px;
+  padding: 0px 0px 100px 80px;
 }
 
 .sekhmet-title {
@@ -32,11 +33,18 @@ h1 {
   font-size: 70px;
   text-align: left;
 }
+
+h2 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 48px;
+  color: var(--secondary-color);
+}
 .sekhmet-hero {
   max-height: 80vh;
   display: block;
   margin: 0 auto;
-  border-radius: 20px;
+  border-radius: 30px;
   transform: rotateZ(351deg);
 }
 
@@ -49,15 +57,14 @@ h1 {
   background-image: linear-gradient(to right bottom, #def1fb, #f2f7fe, #ffffff);
 }
 
-h2 {
-  font-weight: bold;
-  text-align: center;
-  font-size: 48px;
+.introduction h2 {
+  padding-right: 150px;
 }
+
 .sekhmet-intro {
   display: block;
   margin: 0 auto;
-  max-width: 70%;
+  max-width: 80%;
 }
 
 .introduction p {
@@ -88,6 +95,7 @@ h2 {
 .like .orange {
   background-color: rgba(254, 140, 104);
 }
+
 .orange p {
   color: #fff;
   line-height: 30px;
@@ -101,7 +109,8 @@ h2 {
 }
 
 .white p {
-  color: var(--primary-color);
+  color: var(--secondary-color);
   line-height: 30px;
   padding: 0px 30px;
+  margin: 0px;
 }
