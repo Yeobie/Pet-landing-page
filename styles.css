@@ -502,3 +502,199 @@ h2 {
     font-size: 20px;
   }
 }
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 5px 0px;
+  }
+
+  nav .d-flex {
+    padding: 0px;
+  }
+
+  .navbar li {
+    margin: 0px 5px;
+    font-size: 8px;
+    padding: 0px 5px 0px 5px;
+  }
+
+  .navbar a {
+    padding: 0px;
+  }
+
+  .hero {
+    padding: 0px;
+    background-image: none;
+  }
+
+  .hero .row {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .hero-title {
+    padding: 10px 0px;
+    text-align: center;
+  }
+
+  .primary {
+    font-size: 10px;
+    padding: 5px 10px;
+    border: 1px solid var(--primary-color);
+  }
+
+  .secondary {
+    font-size: 10px;
+    padding: 5px 10px;
+
+    border: 1px solid var(--secondary-color);
+  }
+
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  .sekhmet-hero {
+    max-width: 70%;
+    border-radius: 200px;
+    transition: none;
+    transform: none;
+    margin-top: 10px;
+  }
+
+  .introduction,
+  .like,
+  .catwalk,
+  .food,
+  .contact {
+    padding: 10px 0px;
+  }
+
+  .introduction {
+    background: none;
+  }
+
+  .introduction h2 {
+    text-align: center;
+    padding: 0px;
+  }
+
+  .sekhmet-intro {
+    max-width: 70%;
+  }
+
+  .introduction p {
+    font-size: 12px;
+    padding: 0px 20px;
+    line-height: 20px;
+  }
+
+  .like h2 {
+    padding-bottom: 0px;
+  }
+
+  .like .row {
+    display: flex;
+    justify-content: center;
+  }
+
+  .like .col-4 {
+    max-width: 230px;
+    margin: 10px;
+  }
+
+  .like .orange img {
+    transition: none;
+  }
+
+  .orange p {
+    font-size: 15px;
+    line-height: 24px;
+    padding: 10px 15px;
+  }
+
+  .like .white img {
+    transition: none;
+  }
+
+  .white p {
+    font-size: 15px;
+    line-height: 24px;
+    padding: 10px 15px;
+  }
+
+  .like img:hover {
+    transform: none;
+  }
+
+  .catwalk {
+    background-size: 200px;
+    background-position: center;
+  }
+
+  .catwalk h2 {
+    padding-bottom: 0px;
+  }
+
+  .catwalk p {
+    padding: 0px 50px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .catwalk img {
+    max-width: 90%;
+    transition: none;
+  }
+
+  .catwalk img:hover {
+    transform: none;
+  }
+
+  .food {
+    background-size: 200px;
+    background-position: center;
+  }
+
+  .food h2 {
+    padding-bottom: 0px;
+  }
+
+  .food p {
+    padding: 30px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .food img {
+    transition: none;
+  }
+
+  .food img:hover {
+    transform: none;
+  }
+
+  .contact {
+    margin: 0px;
+  }
+
+  .contact-title {
+    font-size: 28px;
+  }
+
+  .contact img {
+    max-width: 60%;
+  }
+
+  .contact-info {
+    padding-left: 0px;
+  }
+
+  .contact a {
+    font-size: 20px;
+  }
+}
