@@ -152,7 +152,7 @@ h2 {
   padding-bottom: 30px;
 }
 
-.like .col-4 {
+.like .col-md-4 {
   padding: 0px 0px;
   max-width: 380px;
   border-radius: 30px;
@@ -406,7 +406,7 @@ h2 {
     justify-content: center;
   }
 
-  .like .col-4 {
+  .like .col-md-4 {
     max-width: 230px;
     margin: 10px;
   }
@@ -597,14 +597,9 @@ h2 {
     padding-bottom: 0px;
   }
 
-  .like .row {
-    display: flex;
-    justify-content: center;
-  }
-
-  .like .col-4 {
-    max-width: 230px;
-    margin: 10px;
+  .like .col-md-4 {
+    max-width: 250px;
+    margin: 5px;
   }
 
   .like .orange img {
@@ -612,9 +607,10 @@ h2 {
   }
 
   .orange p {
-    font-size: 15px;
-    line-height: 24px;
-    padding: 10px 15px;
+    font-size: 12px;
+    margin: 0px;
+    line-height: 20px;
+    padding: 10px;
   }
 
   .like .white img {
@@ -622,9 +618,13 @@ h2 {
   }
 
   .white p {
-    font-size: 15px;
-    line-height: 24px;
-    padding: 10px 15px;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 10px;
+    margin: 0px;
+    border: 1px solid #e3e3e3;
+    border-bottom: none;
+    border-radius: 30px 30px 0px 0px;
   }
 
   .like img:hover {
@@ -632,8 +632,7 @@ h2 {
   }
 
   .catwalk {
-    background-size: 200px;
-    background-position: center;
+    background: none;
   }
 
   .catwalk h2 {
@@ -641,14 +640,15 @@ h2 {
   }
 
   .catwalk p {
-    padding: 0px 50px;
-    font-size: 15px;
-    line-height: 24px;
+    padding: 0px 20px;
+    font-size: 12px;
+    line-height: 20px;
   }
 
   .catwalk img {
-    max-width: 90%;
+    max-width: 50%;
     transition: none;
+    margin-bottom: 10px;
   }
 
   .catwalk img:hover {
@@ -656,8 +656,7 @@ h2 {
   }
 
   .food {
-    background-size: 200px;
-    background-position: center;
+    background: none;
   }
 
   .food h2 {
@@ -665,13 +664,14 @@ h2 {
   }
 
   .food p {
-    padding: 30px;
-    font-size: 15px;
-    line-height: 24px;
+    padding: 0px 20px;
+    font-size: 12px;
+    line-height: 20px;
   }
 
   .food img {
     transition: none;
+    max-width: 50%;
   }
 
   .food img:hover {
@@ -679,22 +679,38 @@ h2 {
   }
 
   .contact {
-    margin: 0px;
+    margin-top: 10px;
+    background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/350/original/Untitled2.png?1670169284);
+    background-repeat: repeat-x;
+    background-size: 200px;
+    background-position: center;
   }
 
   .contact-title {
-    font-size: 28px;
+    font-size: 18px;
+    margin-left: 30px;
   }
 
   .contact img {
     max-width: 60%;
   }
 
-  .contact-info {
-    padding-left: 0px;
+  .contact .email {
+    font-size: 15px;
+    margin-left: 30px;
   }
 
-  .contact a {
-    font-size: 20px;
+  .social-links {
+    justify-content: center;
+  }
+
+  .social-links a {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+
+  .credits p {
+    font-size: 12px;
+    padding: 10px 60px;
   }
 }
