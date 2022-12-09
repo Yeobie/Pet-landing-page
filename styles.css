@@ -5,10 +5,16 @@
 
 .navbar {
   padding: 20px;
-  display: flex;
+}
+
+.navbar-collapse {
   justify-content: flex-end;
 }
 
+.fa-paw {
+  font-size: 40px;
+  color: var(--primary-color);
+}
 .navbar ul {
   margin-bottom: 0px;
 }
@@ -320,12 +326,14 @@ h2 {
 
 @media (max-width: 992px) {
   .navbar {
-    display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
+  .navbar-nav {
+    align-items: flex-end;
+  }
   .navbar li {
-    margin: 0px 10px;
+    margin: 0px;
     font-size: 15px;
   }
 
@@ -505,19 +513,18 @@ h2 {
 
 @media (max-width: 576px) {
   .navbar {
-    padding: 5px 0px;
-  }
-
-  nav .d-flex {
-    padding: 0px;
+    padding: 5px;
   }
 
   .navbar li {
     margin: 0px 5px;
-    font-size: 8px;
-    padding: 0px 5px 0px 5px;
+    font-size: 10px;
+    padding: 0px 5px;
   }
 
+  .fa-paw {
+    padding: 10px;
+  }
   .navbar a {
     padding: 0px;
   }
@@ -537,16 +544,18 @@ h2 {
     text-align: center;
   }
 
+  .buttons {
+    justify-content: space-between;
+  }
   .primary {
-    font-size: 10px;
-    padding: 5px 10px;
+    font-size: 12px;
+    padding: 10px;
     border: 1px solid var(--primary-color);
   }
 
   .secondary {
-    font-size: 10px;
-    padding: 5px 10px;
-
+    font-size: 12px;
+    padding: 10px;
     border: 1px solid var(--secondary-color);
   }
 
