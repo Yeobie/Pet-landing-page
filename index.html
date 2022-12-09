@@ -25,7 +25,754 @@
       src="https://kit.fontawesome.com/fcaffe541a.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-color: #fe8c68;
+        --secondary-color: #64e0d1;
+        --main-font: "Itim", cursive;
+      }
+
+      .navbar {
+        padding: 20px;
+      }
+
+      .navbar-collapse {
+        justify-content: flex-end;
+      }
+
+      .fa-paw {
+        font-size: 40px;
+        color: var(--primary-color);
+      }
+      .navbar ul {
+        margin-bottom: 0px;
+      }
+      .navbar li {
+        list-style: none;
+        margin-left: 40px;
+      }
+
+      .navbar a {
+        color: var(--secondary-color);
+        padding: 10px;
+        border-radius: 30px;
+        transition: all 180ms ease-in-out;
+      }
+
+      .navbar a:hover {
+        background-color: var(--primary-color);
+        color: #fff;
+      }
+
+      .container-fluid {
+        padding: 0;
+      }
+
+      /*HERO */
+
+      .hero {
+        padding: 50px 0px;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/346/original/flat_750x_075_f-pad_750x1000_f8f8f8.u1.jpg?1670168875);
+        background-repeat: repeat;
+        background-size: 400px;
+        background-position: center;
+      }
+
+      .hero-title {
+        display: flex;
+        padding: 50px 0px 100px 200px;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .primary {
+        padding: 10px 30px;
+        border-radius: 50px;
+        margin-right: 20px;
+        background-color: var(--primary-color);
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        transition: all 180ms ease-in-out;
+      }
+
+      .primary:hover {
+        background-color: var(--secondary-color);
+        transform: scale(105%);
+      }
+
+      .secondary {
+        padding: 10px 20px;
+        border-radius: 50px;
+        background-color: #fff;
+
+        border: 2px solid var(--secondary-color);
+        transition: all 180ms ease-in-out;
+      }
+
+      .secondary a {
+        text-decoration: none;
+        color: var(--secondary-color);
+        font-weight: bold;
+      }
+
+      .secondary:hover {
+        transform: scale(105%);
+      }
+
+      .sekhmet-title {
+        color: var(--primary-color);
+      }
+
+      h1 {
+        font-size: 70px;
+        text-align: left;
+        font-family: var(--main-font);
+      }
+
+      .sekhmet-hero {
+        max-height: 80vh;
+        display: block;
+        margin: 0 auto;
+        border-radius: 30px;
+        transform: rotateZ(351deg);
+        transition: all 360ms ease-in-out;
+      }
+
+      .sekhmet-hero:hover {
+        transform: scale(110%);
+      }
+
+      /* INTRODUCTION */
+      .introduction,
+      .like,
+      .catwalk,
+      .food,
+      .contact {
+        padding: 60px 100px 30px;
+      }
+      .introduction {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/350/original/Untitled2.png?1670169284);
+        background-repeat: repeat-x;
+        background-size: 400px;
+        background-position: bottom;
+      }
+
+      h2 {
+        font-weight: bold;
+        text-align: center;
+        font-size: 48px;
+        color: var(--secondary-color);
+        font-family: var(--main-font);
+      }
+
+      .introduction h2 {
+        padding-right: 150px;
+      }
+
+      .sekhmet-intro {
+        display: block;
+        margin: 0 auto;
+        max-width: 80%;
+      }
+
+      .introduction p {
+        font-size: 20px;
+        padding: 50px 50px 50px 0px;
+        line-height: 35px;
+      }
+
+      /* LIKE */
+
+      .like h2 {
+        color: var(--primary-color);
+        padding-bottom: 30px;
+      }
+
+      .like .col-md-4 {
+        padding: 0px 0px;
+        max-width: 380px;
+        border-radius: 30px;
+        margin: 20px;
+      }
+
+      .like .orange img {
+        border-radius: 30px 30px 0px 0px;
+        display: block;
+        margin: 0 auto;
+        transition: all 360ms ease-in-out;
+      }
+      .like .orange {
+        background-color: rgba(254, 140, 104);
+      }
+
+      .orange p {
+        color: #fff;
+        line-height: 30px;
+        padding: 20px 30px;
+      }
+
+      .like .white img {
+        border-radius: 0px 0px 30px 30px;
+        display: block;
+        margin: 0 auto;
+        transition: all 360ms ease-in-out;
+      }
+
+      .white p {
+        color: var(--secondary-color);
+        line-height: 30px;
+        padding: 20px 30px;
+        margin: 0px;
+      }
+
+      .like img:hover {
+        transform: scale(110%);
+      }
+      /* CATWALK */
+
+      .catwalk {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/350/original/Untitled2.png?1670169284);
+        background-repeat: repeat-x;
+        background-size: 400px;
+        background-position: bottom;
+      }
+
+      .catwalk h2 {
+        padding-bottom: 30px;
+      }
+
+      .catwalk p {
+        padding: 0px 180px 30px;
+        line-height: 30px;
+      }
+      .catwalk a {
+        color: var(--secondary-color);
+        text-decoration: none;
+      }
+
+      .catwalk img {
+        border-radius: 30px;
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+        transition: all 360ms ease-in-out;
+      }
+
+      .catwalk img:hover {
+        transform: scale(110%);
+      }
+
+      /*FOOD */
+
+      .food {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/351/original/Untitled3.png?1670169476);
+        background-repeat: repeat-x;
+        background-size: 400px;
+        background-position: bottom;
+        padding-bottom: 0px;
+      }
+
+      .food h2 {
+        color: var(--primary-color);
+        padding-bottom: 30px;
+      }
+
+      .food p {
+        padding: 20px 30px;
+        margin-top: 20px;
+        line-height: 30px;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 30px;
+      }
+
+      .food img {
+        max-width: 70%;
+        border-radius: 30px;
+        display: block;
+        margin: 0 auto;
+        transition: all 360ms ease-in-out;
+      }
+
+      .food img:hover {
+        transform: scale(110%);
+      }
+
+      /* CONTACT */
+
+      .contact {
+        margin: 0px 0px 30px;
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/350/original/Untitled2.png?1670169284);
+        background-repeat: repeat-x;
+        background-size: 400px;
+        background-position: center;
+      }
+
+      .contact-title {
+        font-size: 35px;
+        color: var(--primary-color);
+        font-weight: bold;
+        font-family: var(--main-font);
+      }
+
+      .contact img {
+        max-width: 60%;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .contact-info {
+        display: flex;
+        align-items: center;
+      }
+
+      .contact a {
+        text-decoration: none;
+        font-size: 24px;
+        color: #000000;
+        transition: all 180ms ease-in-out;
+      }
+
+      .contact a:hover {
+        color: var(--secondary-color);
+      }
+
+      .social-links a {
+        font-size: 20px;
+        color: #fff;
+        margin-right: 20px;
+        padding: 10px 16px;
+        background-color: var(--primary-color);
+        border-radius: 50%;
+        transition: all 180ms ease-in-out;
+      }
+
+      .social-links a:hover {
+        background-color: var(--secondary-color);
+        color: #fff;
+      }
+
+      /*CREDITS */
+
+      .credits a {
+        color: var(--primary-color);
+        transition: all 180ms ease-in-out;
+      }
+
+      .credits a:hover {
+        color: var(--secondary-color);
+      }
+
+      @media (max-width: 992px) {
+        .navbar {
+          justify-content: space-between;
+        }
+
+        .navbar-nav {
+          align-items: flex-end;
+        }
+        .navbar li {
+          margin: 0px;
+          font-size: 15px;
+        }
+
+        .hero {
+          padding: 0px;
+          background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/056/351/original/Untitled3.png?1670169476);
+          background-size: 300px;
+        }
+
+        .hero .row {
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+
+        .hero-title {
+          padding: 10px 0px;
+          text-align: center;
+        }
+
+        .primary {
+          font-size: 12px;
+          border: 1px solid var(--primary-color);
+        }
+
+        .secondary {
+          font-size: 12px;
+          border: 1px solid var(--secondary-color);
+        }
+
+        h1 {
+          font-size: 40px;
+          text-align: center;
+        }
+
+        h2 {
+          font-size: 30px;
+        }
+        .sekhmet-hero {
+          max-width: 80%;
+          border-radius: 200px;
+          transition: none;
+          transform: none;
+        }
+
+        .introduction,
+        .like,
+        .catwalk,
+        .food,
+        .contact {
+          padding: 30px 10px;
+        }
+
+        .introduction {
+          background-size: 200px;
+          background-position: top;
+        }
+
+        .introduction h2 {
+          text-align: center;
+        }
+
+        .sekhmet-intro {
+          max-width: 70%;
+        }
+
+        .introduction p {
+          font-size: 15px;
+          padding: 10px 30px 0px 0px;
+          line-height: 24px;
+        }
+
+        .like h2 {
+          padding-bottom: 0px;
+        }
+
+        .like .row {
+          display: flex;
+          justify-content: center;
+        }
+
+        .like .col-md-4 {
+          max-width: 230px;
+          margin: 10px;
+        }
+
+        .like .orange img {
+          transition: none;
+        }
+
+        .orange p {
+          font-size: 15px;
+          line-height: 24px;
+          padding: 10px 15px;
+        }
+
+        .like .white img {
+          transition: none;
+        }
+
+        .white p {
+          font-size: 15px;
+          line-height: 24px;
+          padding: 10px 15px;
+        }
+
+        .like img:hover {
+          transform: none;
+        }
+
+        .catwalk {
+          background-size: 200px;
+          background-position: center;
+        }
+
+        .catwalk h2 {
+          padding-bottom: 0px;
+        }
+
+        .catwalk p {
+          padding: 0px 50px;
+          font-size: 15px;
+          line-height: 24px;
+        }
+
+        .catwalk img {
+          max-width: 90%;
+          transition: none;
+        }
+
+        .catwalk img:hover {
+          transform: none;
+        }
+
+        .food {
+          background-size: 200px;
+          background-position: center;
+        }
+
+        .food h2 {
+          padding-bottom: 0px;
+        }
+
+        .food p {
+          padding: 30px;
+          margin-left: 10px;
+          font-size: 15px;
+          line-height: 24px;
+        }
+
+        .food img {
+          transition: none;
+        }
+
+        .food img:hover {
+          transform: none;
+        }
+
+        .contact {
+          margin: 0px;
+        }
+
+        .contact-title {
+          font-size: 28px;
+        }
+
+        .contact img {
+          max-width: 60%;
+        }
+
+        .contact-info {
+          padding-left: 0px;
+        }
+
+        .contact a {
+          font-size: 20px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .navbar {
+          padding: 5px;
+        }
+
+        .navbar li {
+          margin: 0px 5px;
+          font-size: 10px;
+          padding: 0px 5px;
+        }
+
+        .fa-paw {
+          padding: 10px;
+        }
+        .navbar a {
+          padding: 0px;
+        }
+
+        .hero {
+          padding: 0px;
+          background-image: none;
+        }
+
+        .hero .row {
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+
+        .hero-title {
+          padding: 10px 0px;
+          text-align: center;
+        }
+
+        .buttons {
+          justify-content: space-between;
+        }
+        .primary {
+          font-size: 12px;
+          padding: 10px;
+          border: 1px solid var(--primary-color);
+        }
+
+        .secondary {
+          font-size: 12px;
+          padding: 10px;
+          border: 1px solid var(--secondary-color);
+        }
+
+        h1 {
+          font-size: 30px;
+          text-align: center;
+        }
+
+        h2 {
+          font-size: 20px;
+        }
+        .sekhmet-hero {
+          max-width: 70%;
+          border-radius: 200px;
+          transition: none;
+          transform: none;
+          margin-top: 10px;
+        }
+
+        .introduction,
+        .like,
+        .catwalk,
+        .food,
+        .contact {
+          padding: 10px 0px;
+        }
+
+        .introduction {
+          background: none;
+        }
+
+        .introduction h2 {
+          text-align: center;
+          padding: 0px;
+        }
+
+        .sekhmet-intro {
+          max-width: 70%;
+        }
+
+        .introduction p {
+          font-size: 12px;
+          padding: 0px 20px;
+          line-height: 20px;
+        }
+
+        .like h2 {
+          padding-bottom: 0px;
+        }
+
+        .like .col-md-4 {
+          max-width: 250px;
+          margin: 5px;
+        }
+
+        .like .orange img {
+          transition: none;
+        }
+
+        .orange p {
+          font-size: 12px;
+          margin: 0px;
+          line-height: 20px;
+          padding: 10px;
+        }
+
+        .like .white img {
+          transition: none;
+        }
+
+        .white p {
+          font-size: 12px;
+          line-height: 20px;
+          padding: 10px;
+          margin: 0px;
+          border: 1px solid #e3e3e3;
+          border-bottom: none;
+          border-radius: 30px 30px 0px 0px;
+        }
+
+        .like img:hover {
+          transform: none;
+        }
+
+        .catwalk {
+          background: none;
+        }
+
+        .catwalk h2 {
+          padding-bottom: 0px;
+        }
+
+        .catwalk p {
+          padding: 0px 20px;
+          font-size: 12px;
+          line-height: 20px;
+        }
+
+        .catwalk img {
+          max-width: 50%;
+          transition: none;
+          margin-bottom: 10px;
+        }
+
+        .catwalk img:hover {
+          transform: none;
+        }
+
+        .food {
+          background: none;
+        }
+
+        .food h2 {
+          padding-bottom: 0px;
+        }
+
+        .food p {
+          padding: 0px 20px;
+          font-size: 12px;
+          line-height: 20px;
+        }
+
+        .food img {
+          transition: none;
+          max-width: 50%;
+        }
+
+        .food img:hover {
+          transform: none;
+        }
+
+        .contact {
+          margin-top: 10px;
+          background: none;
+        }
+
+        .contact-info {
+          padding-right: 0px;
+        }
+        .contact-title {
+          font-size: 18px;
+          margin-left: 30px;
+          padding-top: 10px;
+          border-top: solid 1px #e3e3e3;
+          color: var(--secondary-color);
+        }
+
+        .contact img {
+          max-width: 60%;
+        }
+
+        .contact .email {
+          font-size: 15px;
+          margin-left: 30px;
+        }
+
+        .social-links {
+          justify-content: center;
+        }
+
+        .social-links a {
+          font-size: 12px;
+          padding: 5px 8px;
+        }
+
+        .credits p {
+          font-size: 12px;
+          padding: 10px 60px;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light">
@@ -232,9 +979,9 @@
               chicken-based food you'll give me. But I also like fish, so my
               mommy can manage to keep my diet varied between different
               flavours. My favourite food brand ever is Catz Fine Food. Whenever
-              she opens one of those cans, no matter if I'm sleeping or
-              whatever: I'll immediately recognize the sound and run there to
-              enjoy that delicious food!
+              she opens one of those cans, no matter if I'm sleeping or not:
+              I'll immediately recognize the sound and run there to enjoy that
+              delicious food!
             </p>
           </div>
           <div class="col-md-5">
